@@ -5,153 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DA DINO - Pizza & Pasta</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Work Sans', sans-serif;
-      background-color: #ffffff;
-      color: #111;
-      scroll-behavior: smooth;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-      background-color: #000;
-      color: #fff;
-      animation: fadeIn 2s ease;
-    }
-    header img {
-      max-width: 700px;
-      margin-bottom: 20px;
-      animation: zoomIn 2s ease;
-    }
-    header h1 {
-      font-size: 3.4rem;
-      font-family: 'Playfair Display', serif;
-      margin: 5px auto;
-    }
-    .hero-image {
-      width: 100%;
-      height: 600px;
-      background: url('https://images.unsplash.com/photo-1601925261553-1e1a4c79b1b2?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
-      animation: fadeIn 3s ease;
-    }
-    nav {
-      text-align: center;
-      margin: 30px 0 10px;
-    }
-    nav a {
-      color: #111;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-      text-align: center;
-      animation: fadeInUp 2s ease;
-    }
-    section h2 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      font-size: 2.4rem;
-      margin-bottom: 20px;
-    }
-    section p {
-      font-size: 1.3rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 280px;
-      border-radius: 14px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      text-align: left;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .nature-banner {
-      width: 100%;
-      height: 300px;
-      background: url('https://images.unsplash.com/photo-1524593168964-00788de7963c?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
-      background-size: cover;
-      margin: 40px 0;
-      animation: fadeIn 3s ease;
-    }
-    .highlight-section {
-      background-color: #f4f4f4;
-      padding: 40px 20px;
-      color: #111;
-    }
-    .buffet-section {
-      background-color: #e0f7df;
-      padding: 40px 20px;
-    }
-    .buffet-section h2 {
-      color: #2e7d32;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #111;
-      font-size: 14px;
-      color: #ccc;
-    }
-    .wine-animation {
-      width: 100px;
-      margin: 30px auto 0;
-    }
-    .wine-animation img {
-      width: 100%;
-      animation: pourWine 1.5s ease-in-out infinite alternate;
-    }
-    @keyframes fadeIn {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-    @keyframes zoomIn {
-      0% {transform: scale(0.8); opacity: 0;}
-      100% {transform: scale(1); opacity: 1;}
-    }
-    @keyframes fadeInUp {
-      0% {opacity: 0; transform: translateY(20px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
-    @keyframes pourWine {
-      0% {transform: rotate(-2deg);}
-      100% {transform: rotate(2deg);}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="DA DINO.PNG" alt="DA DINO Logo">
+    <img src="images/logo.png" alt="DA DINO Logo">
     <h1>Pizza & Pasta im Herzen von Green City</h1>
   </header>
 
@@ -168,13 +26,13 @@
     <h2>Über DA DINO</h2>
     <p>DA DINO steht für authentische italienische Küche und nachhaltigen Genuss im modernen Stadtteil Green City in Zürich. Wir vereinen italienische Leidenschaft mit Umweltbewusstsein – mit frischer Pasta, knuspriger Pizza, edlen Weinen und einer herzlichen Atmosphäre. Die Eröffnung steht kurz bevor – wir freuen uns auf dich!</p>
     <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1576402187875-4c8b1c6c2f3c?auto=format&fit=crop&w=800&q=80" alt="Pizza">
-      <img src="https://images.unsplash.com/photo-1589308078054-832c0a7b9f60?auto=format&fit=crop&w=800&q=80" alt="Pasta">
-      <img src="https://images.unsplash.com/photo-1621011454319-f9b5aa3dc64b?auto=format&fit=crop&w=800&q=80" alt="Rotwein wird eingeschenkt">
-      <img src="https://images.unsplash.com/photo-1588666802192-4185aa3df5bb?auto=format&fit=crop&w=800&q=80" alt="Kaffee von Ferdinand Coffee">
+      <img src="images/pizza.jpg" alt="Pizza">
+      <img src="images/pasta.jpg" alt="Pasta">
+      <img src="images/wine.jpg" alt="Rotwein wird eingeschenkt">
+      <img src="images/coffee.jpg" alt="Kaffee von Ferdinand Coffee">
     </div>
     <div class="wine-animation">
-      <img src="https://cdn-icons-png.flaticon.com/512/2484/2484250.png" alt="Weinglas Animation">
+      <img src="images/wine-glass.png" alt="Weinglas Animation">
     </div>
   </section>
 
@@ -211,4 +69,3 @@
   </footer>
 </body>
 </html>
-
