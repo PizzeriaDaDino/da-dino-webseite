@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  scroll-behavior: smooth;
+}
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #000;
+  color: #fff;
+  animation: fadeIn 2s ease;
+}
+header img {
+  max-width: 700px;
+  margin-bottom: 20px;
+  animation: zoomIn 2s ease;
+}
+header h1 {
+  font-size: 3.4rem;
+  font-family: 'Playfair Display', serif;
+  margin: 5px auto;
+}
+.hero-image {
+  width: 100%;
+  height: 600px;
+  background: url('images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  animation: fadeIn 3s ease;
+}
+nav {
+  text-align: center;
+  margin: 30px 0 10px;
+}
+nav a {
+  color: #111;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 2s ease;
+}
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+section p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.nature-banner {
+  width: 100%;
+  height: 300px;
+  background: url('images/nature.jpg') no-repeat center center;
+  background-size: cover;
+  margin: 40px 0;
+  animation: fadeIn 3s ease;
+}
+.highlight-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  color: #111;
+}
+.buffet-section {
+  background-color: #e0f7df;
+  padding: 40px 20px;
+}
+.buffet-section h2 {
+  color: #2e7d32;
+}
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111;
+  font-size: 14px;
+  color: #ccc;
+}
+.wine-animation {
+  width: 100px;
+  margin: 30px auto 0;
+}
+.wine-animation img {
+  width: 100%;
+  animation: pourWine 1.5s ease-in-out infinite alternate;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes zoomIn {
+  0% {transform: scale(0.8); opacity: 0;}
+  100% {transform: scale(1); opacity: 1;}
+}
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes pourWine {
+  0% {transform: rotate(-2deg);}
+  100% {transform: rotate(2deg);}
+}
